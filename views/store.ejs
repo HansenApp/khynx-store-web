@@ -1,0 +1,19 @@
+<h1 class="text-center text-3xl font-medium mt-2">Store</h1>
+<div class="text-center">
+    <% if (!auth) { %>
+        <h1 class="mt-5 text-3xl">Login first <a href="/login" class="text-sky-400 hover:text-sky-500">Click here!</a>
+        </h1>
+        <% } else { %>
+
+            <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">Setup discord server</div>
+                    <p class="text-gray-700 text-base">Product ini akan setup discord server kamu menjadi store (kalau
+                        server community masih coming soon!)
+                    </p><br>
+                    <a href="/cart/add?id=0" class="px-4 py-2 rounded shadow mt-10 bg-green-400 hover:bg-green-500">Add
+                        to cart</a>
+                </div>
+            </div>
+            <% } %>
+</div>

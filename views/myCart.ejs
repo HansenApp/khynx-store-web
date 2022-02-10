@@ -1,0 +1,8 @@
+<% cart.forEach(c=> { %>
+    <h1 class="font-medium text-2xl mt-5">
+        <%= c.name %> : Count : <%= c.count %>
+    </h1>
+    <hr>
+    <% }) %>
+        <br><br><br>
+        <a href="/checkout" class="bg-green-400 hover:bg-green-500 rounded px-4 py-2">Checkout</a>
